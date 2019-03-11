@@ -19,10 +19,9 @@ export default class BlogPost extends Component {
         I won't let you tilt me<br/>
         You only grew accustomed to the salt<br/>
         I was born in it<br/>
-        <Comment commentText={comments[0]} />
-        <Comment commentText={comments[0]} />
-        <Comment commentText={comments[0]} />
-  
+        {
+          comments.map(comment => <Comment commentText={comment} />)
+        }
       </div>
     );
   }

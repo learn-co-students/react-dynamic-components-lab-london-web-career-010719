@@ -4,7 +4,9 @@ import React, { Component } from 'react';
 class Comment extends React.Component {
   render() {
     return (
-      <Comment BlogPost={"test"}/>
+      <div className="comment">
+        {this.props.commentText}
+      </div>
     )
   }
 }
